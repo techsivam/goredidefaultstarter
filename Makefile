@@ -4,8 +4,12 @@ build:
 run:
 	docker-compose up -d
 
+
+
 stop:
 	docker-compose down
+
+start: stop build run
 
 logs:
 	docker-compose logs -f
